@@ -1,0 +1,8 @@
+bagpy==0.5
+h5py==3.11.0
+matplotlib==3.9.0
+numpy==2.0.0
+opencv-python-headless==4.10.0.84
+pandas==2.2.2
+pyserial==3.5
+scipy==1.14.0
