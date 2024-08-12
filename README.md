@@ -1,6 +1,7 @@
 # TItle
 
 Our foot pressure sensor blablabla
+![plot](/images/.png)
 
 # Instructions to replicate our results
 ## Measuring Data
