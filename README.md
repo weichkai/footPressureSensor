@@ -1,6 +1,6 @@
 # Foot Sole Pressure Sensing With The Fullsoul
 
-This is a 
+This is our repo for the Clinical Applications of Computation Medicine course, where we were able to measure the foot pressure distribution within a barefoot shoe.
 
 <div>
   <img src="images/foot_sole_sensor_scan_right.png" width="15%" alt="Foot Sole Sensor Scan Right">
