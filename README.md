@@ -67,7 +67,7 @@ These are our programs and what each program does. For further information pleas
    - Always remember to update the folder paths according to your specific requirements.
 
 # Miscelaneous
-Manufacturer contact:
+## Manufacturer contact:
 
 Nick, WANG
 
