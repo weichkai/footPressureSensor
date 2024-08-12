@@ -21,3 +21,5 @@ there are a total of 5 programs:
 
 
 # Miscelaneous
+Manufacturer contact
+Sensor datasheet link etc
