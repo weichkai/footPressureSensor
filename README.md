@@ -1,11 +1,18 @@
 # Title
 
 Our foot pressure sensor blablabla
-<img src="images/foot_sole_sensor_scan_right.png" width="15%" alt="Foot Sole Sensor Scan">
 
+<div>
+  <img src="images/foot_sole_sensor_scan_right.png" width="30%" alt="Foot Sole Sensor Scan Right">
+  <img src="images/sandwich.png" width="30%" alt="Sandwich Construction inside Fullsoul">
+</div>
 
 
 # Instructions to replicate our results
+## Installing Dependencies
+Install all the libraries that are listed in the requirements.txt with your preffered method
+
+
 ## Measuring Data
 1. Install the snesor in the fullsoul
 2. Connect the controller to both the fullsoul and your pc via usb-c cable
@@ -24,6 +31,7 @@ Our foot pressure sensor blablabla
 
 # Data
 All data we recorded is available in this cloud (lrz sync&share for TUM students): https://syncandshare.lrz.de/getlink/fiNrHQxXBhm1jq8pmnKeAs/
+
 If you have trouble accessing it, please let us know.
 We could not use a google drive due to lack of space. 
 
