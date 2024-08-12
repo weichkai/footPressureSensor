@@ -6,6 +6,10 @@ Our foot pressure sensor blablabla
 
 
 # Instructions to replicate our results
+## Installing Dependencies
+Install all the libraries that are listed in the requirements.txt with your preffered method
+
+
 ## Measuring Data
 1. Install the snesor in the fullsoul
 2. Connect the controller to both the fullsoul and your pc via usb-c cable
