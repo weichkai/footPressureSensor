@@ -7,7 +7,9 @@ Our foot pressure sensor blablabla
 
 
 # Data
-all the data are uploaded in this lrz link: https://syncandshare.lrz.de/getlink/fiNrHQxXBhm1jq8pmnKeAs/
+All data we recorded is available in this cloud (lrz sync&share for TUM students): https://syncandshare.lrz.de/getlink/fiNrHQxXBhm1jq8pmnKeAs/
+If you have trouble accessing it, please let us know.
+We could not use a google drive due to lack of space. 
 
 # Programs
 there are a total of 5 programs:
