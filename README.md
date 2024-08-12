@@ -38,14 +38,19 @@ We could not use a google drive due to lack of space.
 # Programs
 These are our programs and what each program does. For further information please look at each individual programs docstring!
 
-1. log_velostat_sensor_h5.py: to collect sensor data.
-Please ensure that the video is recorded simultaneously to keep the sensor data and the corresponding video synchronized. 
-2. index_find.py: 
-But if you forgot this, you can use
-If you forget to synchronize the walking video and the collected data, you can use this file to determine the correct indices. This script identifies the peak indices in your data, which you can then use to adjust the start and end points in viz_generate_frames.py. Make sure to update lines 80 and 81 of viz_generate_frames.py with these peak indices to ensure proper synchronization between your video and sensor data.
-3. velostat_sensor_to_pressure.py
-4. viz_generate_frames.py
-5. viz_generate_frames.py: to visualize and analyze the sensor data along with the video. This script will process the data from the HDF5 files and the video to provide synchronized visualizations, allowing you to examine the correlation between sensor data and video footage.
+1. log_velostat_sensor_h5.py: collects sensor data from the Velostat sensors.
+   - Remember to modify the port name in line 55 to match your computer's configuration.
+   - Ensure that the video is recorded simultaneously with the sensor data to keep them synchronized.
+2. index_find.py:
+   - If you forget to synchronize the walking video with the collected data, use this script to determine the correct indices for synchronization. It identifies the peak indices in your data, which you can then use to adjust the start and end points in viz_generate_frames.py.
+   - Additionally, this script helps you edit the video by cutting it from the first peak to the last peak (when you are fully on your foot).
+   - Update lines 80 and 81 of viz_generate_frames.py with these peak indices to ensure proper synchronization between your video and sensor data.
+3. velostat_sensor_to_pressure.py: provides a function to convert Velostat sensor output values to pressure in Pascals using linear interpolation.
+   - No modifications are needed for this script. The function is modular and directly used by viz_generate_frames.py.
+4. viz_generate_frames.py: visualizes and analyzes sensor data alongside the video.
+   - This script generates frames of the walking process, featuring three subplots: the entire walking process on the top left, the average pressure across the entire foot over time on the bottom left, and the pressure recorded at each sensor point over time on the right.
+5. frames_to_video.py: creates an animation from the generated frames.
+   - Always remember to update the folder paths according to your specific requirements.
 
 # Miscelaneous
 Manufacturer contact
