@@ -5,7 +5,7 @@ This is our repo for the Clinical Applications of Computation Medicine course, w
 <div>
   <img src="images/foot_sole_sensor_scan_right.png" width="15%" alt="Foot Sole Sensor Scan Right">
   <img src="images/sandwich.png" width="75%" alt="Sandwich Construction inside Fullsoul">
-  <img src="images/result.png" width="100%" alst="results"
+  <img src="images/result.png" width="90%" alst="results"
 </div>
 
 
