@@ -12,6 +12,14 @@ Basicall the ultimate goal is to measure the health benefits of barefoot (or bar
   <img src="images/result.png" width="90%" alst="results"
 </div>
 
+## Workflow (Please refer to our video for more details on each step)
+1. First step was to try out if the Velostat sensor works, we also wrote our own programs to get the sensor data so that we were not dependent on the manufacturers demo software
+2. Then we wanted to understand the concept and we created a proof of concept 3by3 matrix
+3. Next we wanted to characterize our sensor, lots and lots of testing
+4. Implementation of the sensor in the fullsoul
+5. Extensive testing of the fullsoul on different terrain
+6. Visualization of the data and synchronization with videos
+
 
 # Instructions to replicate our results
 ## Installing Dependencies
@@ -27,10 +35,12 @@ Install all the libraries that are listed in the requirements.txt with your pref
 
 
 ## Visualizing Data
-1. Open program "viz_generate_frames.py"
-2. Change the location and names of the video and h5 data file (recorded above) in the code to match your folder structure
-3. Run program "viz_generate_frames.py"
-
+1. Synchronize data with video
+2. Run index_find.py to get a plot showing each peak’s index (each peak is when the most pressure is on the foot -> when foot is flat).
+3. Edit your walking videos to ensure they start and end with the entire (flat) foot on the ground.
+4. Open the program viz_generate_frames.py and use the command “python viz_generate_frames.py data/2024-07-25_normal_shoes/nrshoes_left_stone2.h5 data/2024-07-25_normal_shoes/nrshoes_left_stone2.MOV”. Remember to update the file paths and names to match your folder structure.
+5. Run the program viz_generate_frames.py, and all the frames will be generated in your output folder.
+6. Run frames_to_video.py to create a video from all the frames you generated.
 
 
 # Data
