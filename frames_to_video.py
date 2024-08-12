@@ -5,8 +5,8 @@ Command Line Arguments:
     python frames_to_video.py
     
 Usage:
-    After running "viz_generate_frames.py" and got all the frames, please use this file to generate an animation.
-    remember to customize the folder position in line 22 and 23.
+    After running "viz_generate_frames.py" and generating all the frames, please use this file to create an animation
+    Remember to customize the folder paths in lines 22 and 23
 """
 from moviepy.editor import ImageSequenceClip
 import os

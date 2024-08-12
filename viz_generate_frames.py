@@ -8,6 +8,7 @@ Command Line Arguments:
     hdf5_path1 : Specifies the path to the first HDF5 file containing Velostat sensor pressure data.
     hdf5_path2 : Specifies the path to the second HDF5 file containing Velostat sensor pressure data.
     video_path : Path to the video file synchronized with the force data (Requires same start and end time as the data)
+    e.g. python viz_generate_frames.py data/2024-07-25_normal_shoes/nrshoes_left_stone2.h5 data/2024-07-25_normal_shoes/nrshoes_left_stone2.MOV
 
 Usage:
     Run the script with paths to two HDF5 files and a video file to start the data visualization process:
@@ -37,14 +38,13 @@ import argparse
 from velostat_sensor_to_pressure import lookup_pressure
 from scipy.signal import find_peaks, butter, filtfilt
 
-# when you want to run this file, please enter 👇 into the command line
-# python viz_generate_frames.py data/2024-07-25_normal_shoes/nrshoes_left_stone2.h5 data/2024-07-25_normal_shoes/nrshoes_left_stone2.MOV
 
 # Parse command line arguments for the HDF5 files
 parser = argparse.ArgumentParser(description='Visualize force data from two HDF5 files with sensor maps.')
 parser.add_argument('hdf5_path1', help='Path to the first HDF5 file containing force data.')
 parser.add_argument('video_path', help='Path to the video file synchronized with the force data.')
 args = parser.parse_args()
+
 
 def load_data(hdf5_path):
     with h5py.File(hdf5_path, 'r') as file:
@@ -75,13 +75,14 @@ def load_data(hdf5_path):
         
         data = file[dataset_name][:]
 
-        # remember to modify this, when your walking video and the collected data are not simultaneously. 
-        # you can use "index_find.py" to get corresponding values of index_start and index_end for each collected data.
+        # Remember to modify this if your walking video and the collected data are not synchronized.
+        # You can use "index_find.py" to find the corresponding values of index_start and index_end for each set of collected data.
         index_start= 27
         index_end = 151
 
         # timestamps = [datetime.fromtimestamp(ts / 1e9) for ts in data[:, 0]]
         timestamps = [datetime.fromtimestamp(ts / 1e9) for ts in data[index_start:index_end, 0]]
+        
         # sensor_values = data[:, 1:]
         # sensor_values = data[60:355,1:]
         sensor_values = data[index_start:index_end,1:]
@@ -109,7 +110,6 @@ def create_video_from_frames(frames_directory, output_video_path, fps):
     # Release the video writer
     video_writer.release()
     print(f"Video saved to {output_video_path}")
-
 
 
 timestamps1, sensor_values1, points_df1, image_path1, image_height_mm1, scatter_size1, label1 = load_data(args.hdf5_path1)

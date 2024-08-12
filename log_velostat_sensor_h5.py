@@ -11,6 +11,8 @@ Usage:
 
     Run the script with the --log_left flag to start logging from the left sensor which must be connected after the right sensor:
         log_velostat_sensor_h5.py --log_left
+        
+    Remember to modify port name to adapt your computer in line 55
 
 Features:
     - Dynamic filename generation based on sensor side and current timestamp.
@@ -48,7 +50,7 @@ class FootSoleLogger:
         self.hdf5_file = current_time.strftime(f"{sensor_side}_%Y-%m-%d-%H-%M-%S.h5")
 
     def init_serial(self):
-        # remember to modify port name to adapt your computer
+        # Remember to modify port name to adapt your computer
         # port = '/dev/ttyUSB1' if self.use_left_sensor else '/dev/ttyUSB0'
         port = '/dev/tty.usbserial-10' if self.use_left_sensor else '/dev/ttyUSB0'
         # /dev/tty.Bluetooth-Incoming-Port 
