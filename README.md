@@ -1,7 +1,8 @@
-# TItle
+# Title
 
 Our foot pressure sensor blablabla
-![plot](/images/foot_sole_sensor_scan_right.png){: width="30%"}
+<img src="images/foot_sole_sensor_scan_right.png" width="15%" alt="Foot Sole Sensor Scan">
+
 
 
 # Instructions to replicate our results
