@@ -4,7 +4,7 @@ Our foot pressure sensor blablabla
 
 <div>
   <img src="images/foot_sole_sensor_scan_right.png" width="15%" alt="Foot Sole Sensor Scan Right">
-  <img src="images/sandwich.png" width="50%" alt="Sandwich Construction inside Fullsoul">
+  <img src="images/sandwich.png" width="75%" alt="Sandwich Construction inside Fullsoul">
 </div>
 
 
