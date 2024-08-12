@@ -68,11 +68,15 @@ These are our programs and what each program does. For further information pleas
 
 # Miscelaneous
 Manufacturer contact:
-Nick, WANG
-+86-18588224300
-Nick.wang@mxkj.net.cn
-Moxian Technology (Dongguan) Co., Ltd.
-Room 802, Building A5, International Innovation and Entrepreneurship Center, Songshan Lake, Dongguan
-https://www.moxiantech.com/
 
-Sensor datasheet link etc
+Nick, WANG
+
++86-18588224300
+
+Nick.wang@mxkj.net.cn
+
+Moxian Technology (Dongguan) Co., Ltd.
+
+Room 802, Building A5, International Innovation and Entrepreneurship Center, Songshan Lake, Dongguan
+
+https://www.moxiantech.com/
