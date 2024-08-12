@@ -1,7 +1,7 @@
 # TItle
 
 Our foot pressure sensor blablabla
-![plot](/images/foot_sole_sensor_scan_right.png)
+![plot](/images/foot_sole_sensor_scan_right.png | width=100)
 
 
 # Instructions to replicate our results
