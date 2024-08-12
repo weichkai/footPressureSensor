@@ -26,7 +26,6 @@ Install all the libraries that are listed in the requirements.txt with your pref
 1. Open program "viz_generate_frames.py"
 2. Change the location and names of the video and h5 data file (recorded above) in the code to match your folder structure
 3. Run program "viz_generate_frames.py"
-4. 
 
 
 
@@ -37,14 +36,14 @@ If you have trouble accessing it, please let us know.
 We could not use a google drive due to lack of space. 
 
 # Programs
-there are a total of 5 python files and 2 folders (config and images):
+These are our programs and what each program does. For further information please look at each individual programs docstring!
+
 1. log_velostat_sensor_h5.py: to collect sensor data.
 Please ensure that the video is recorded simultaneously to keep the sensor data and the corresponding video synchronized. 
 2. index_find.py: 
 But if you forgot this, you can use
 If you forget to synchronize the walking video and the collected data, you can use this file to determine the correct indices. This script identifies the peak indices in your data, which you can then use to adjust the start and end points in viz_generate_frames.py. Make sure to update lines 80 and 81 of viz_generate_frames.py with these peak indices to ensure proper synchronization between your video and sensor data.
 3. velostat_sensor_to_pressure.py
-
 4. viz_generate_frames.py
 5. viz_generate_frames.py: to visualize and analyze the sensor data along with the video. This script will process the data from the HDF5 files and the video to provide synchronized visualizations, allowing you to examine the correlation between sensor data and video footage.
 
