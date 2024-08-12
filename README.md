@@ -3,7 +3,7 @@
 This is our repo for the Clinical Applications of Computation Medicine course, where we were able to measure the foot pressure distribution within a barefoot shoe.
 
 ## Idea
-Basicall the ultimate goal is to measure the health benefits of barefoot (or barefoot shoes) running. For this course the goal was to use the Velostat sensor shown below in Prof. Dr. Martin Daumer's barefoot shoe the fullsoul, and see if we are able to measure the foot pressure distribution.
+Basically the ultimate goal is to measure the health benefits of barefoot (or barefoot shoes) running. For this course the goal was to use the Velostat sensor shown below in Prof. Dr. Martin Daumer's barefoot shoe the fullsoul, and see if we are able to measure the foot pressure distribution.
 
 
 <div>
