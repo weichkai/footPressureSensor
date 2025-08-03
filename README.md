@@ -70,7 +70,7 @@ These are our programs and what each program does. For further information pleas
 5. frames_to_video.py: creates an animation from the generated frames.
    - Always remember to update the folder paths according to your specific requirements.
 
-# Miscelaneous
+# Miscellaneous
 ## Manufacturer contact:
 
 Nick, WANG
